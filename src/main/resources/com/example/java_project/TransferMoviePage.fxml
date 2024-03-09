@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.TransferMoviePageController">
+   <children>
+      <Label layoutX="243.0" layoutY="37.0" prefHeight="34.0" prefWidth="294.0" style="-fx-background-color: #363332;" text="         TRANSFER MOVIES" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+
+      </Label>
+      <Label layoutX="60.0" layoutY="186.0" prefHeight="34.0" prefWidth="294.0" style="-fx-background-color: #363332;" text="             Movie Name " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+
+      </Label>
+      <TextField fx:id="MovieNameField" layoutX="390.0" layoutY="186.0" prefHeight="34.0" prefWidth="360.0" />
+      <Label layoutX="59.0" layoutY="249.0" prefHeight="34.0" prefWidth="294.0" style="-fx-background-color: #363332;" text=" Production Company Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="CompanyList" layoutX="395.0" layoutY="249.0" prefHeight="34.0" prefWidth="352.0" />
+      <Button fx:id="TransferButton" layoutX="339.0" layoutY="373.0" mnemonicParsing="false" onAction="#onTransferButtonClick" prefHeight="31.0" prefWidth="102.0" style="-fx-border-color: green;" text="TRANSFER!">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="686.0" layoutY="513.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="27.0" prefWidth="56.0" style="-fx-border-color: #45d1ed;" text="Back" />
+      <Label fx:id="ErrorLabel" layoutX="390.0" layoutY="161.0" prefHeight="18.0" prefWidth="360.0" textFill="#e10000" />
+      <Label fx:id="SuccessLabel" layoutX="339.0" layoutY="419.0" prefHeight="18.0" prefWidth="174.0" />
+      <ImageView fitHeight="119.0" fitWidth="181.0" layoutX="300.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@7.jpg" />
+         </image>
+      </ImageView>
+
+
+   </children>
+</AnchorPane>

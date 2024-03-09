@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.LogInPageController">
+   <children>
+      <ImageView fitHeight="286.0" fitWidth="336.0" layoutX="50.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="196.0" layoutY="159.0" prefHeight="0.0" prefWidth="284.0" />
+      <Label layoutX="218.0" layoutY="133.0" prefHeight="18.0" prefWidth="260.0" text="      Log In or Sign Up to continue.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="LogInButton" layoutX="636.0" layoutY="349.0" mnemonicParsing="false" onAction="#onLogInButtonClick" style="-fx-background-color: #629ccc;" text="Log In" textFill="WHITE" />
+      <TextField fx:id="LogInTextField" layoutX="416.0" layoutY="315.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter the Name of the Production Company" style="-fx-border-color: #acd3f2;" />
+      <Separator layoutX="405.0" layoutY="391.0" prefHeight="26.0" prefWidth="291.0" />
+      <Label layoutX="238.0" layoutY="90.0" text="Welcome to Moviepedia.">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="LogInFailureText" layoutX="537.0" layoutY="292.0" prefHeight="18.0" prefWidth="149.0" textFill="RED" />
+   </children>
+</AnchorPane>

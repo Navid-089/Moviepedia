@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.SignUpPage">
+   <children>
+      <Label layoutX="122.0" layoutY="117.0" prefHeight="51.0" prefWidth="464.0" text="    Here is to a new start.">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Button layoutX="629.0" layoutY="328.0" mnemonicParsing="false" text="Sign up" />
+      <TextField layoutX="414.0" layoutY="297.0" prefHeight="26.0" prefWidth="271.0" promptText="Sign Up with your Production Company Name" style="-fx-border-color: #acd3f2;" />
+      <ImageView fitHeight="299.0" fitWidth="353.0" layoutX="22.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@38wrjoo0w4w21.jpg" />
+         </image>
+      </ImageView>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="388.0" layoutY="181.0" orientation="VERTICAL" prefHeight="353.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>

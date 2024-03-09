@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.ProducedMoviesController">
+   <children>
+      <Button fx:id="BackButton" layoutX="705.0" layoutY="552.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="27.0" prefWidth="52.0" style="-fx-border-color: #3bcddb;" text="Back" />
+      <TableView fx:id="Table" layoutX="11.0" layoutY="79.0" prefHeight="354.0" prefWidth="770.0" style="-fx-border-color: #cbeff2;">
+        <columns>
+          <TableColumn fx:id="TitleCol" prefWidth="123.00000286102295" style="-fx-background-color: #cbeff2;" text="Title" />
+          <TableColumn fx:id="YearCol" prefWidth="77.79998779296875" text="Release Year" />
+            <TableColumn fx:id="GenresCol" prefWidth="153.7999725341797" style="-fx-background-color: #cbeff2;" text="Genre" />
+            <TableColumn fx:id="DurationCol" prefWidth="57.4000244140625" text="Duration" />
+            <TableColumn fx:id="ProdComCol" prefWidth="136.5999755859375" style="-fx-background-color: #cbeff2;" text="Production Company" />
+            <TableColumn fx:id="BudgetCol" prefWidth="76.20001220703125" text="Budget($)" />
+            <TableColumn fx:id="RevenueCol" prefWidth="76.0" style="-fx-background-color: #cbeff2;" text="Revenue($)" />
+            <TableColumn fx:id="ProfitCol" prefWidth="78.4000244140625" text="Profit($)'" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="3.0" prefWidth="216.0" text="Produced Movies ">
+         <font>
+            <Font name="Artifakt Element Black Italic" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="10.0" layoutY="50.0" prefHeight="0.0" prefWidth="778.0" />
+      <Separator layoutX="11.0" layoutY="539.0" prefHeight="3.0" prefWidth="786.0" />
+      <Label fx:id="CompanyNameLabel" layoutX="14.0" layoutY="53.0" prefHeight="22.0" prefWidth="303.0" textFill="#3086ef">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="RefreshButton" layoutX="684.0" layoutY="14.0" mnemonicParsing="false" onAction="#onRefreshButtonClick" prefHeight="27.0" prefWidth="70.0" style="-fx-border-color: #3bcddb;" text="Refresh" />
+      <Label layoutX="14.0" layoutY="470.0" prefHeight="18.0" prefWidth="161.0" text="Watch trailer of any movie :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TrailerSearchField" layoutX="176.0" layoutY="467.0" prefHeight="26.0" prefWidth="250.0" />
+      <Button fx:id="SearchButton" layoutX="378.0" layoutY="503.0" mnemonicParsing="false" onAction="#onSearchButtonClick" style="-fx-background-color: #29472b;" text="Search" textFill="WHITE" />
+   </children>
+</AnchorPane>

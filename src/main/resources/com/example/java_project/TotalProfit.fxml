@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.TotalProfitController">
+   <children>
+      <ImageView fitHeight="230.0" fitWidth="316.0" layoutX="459.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@totalprofitimage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="271.0" layoutY="38.0" prefHeight="39.0" prefWidth="262.0" style="-fx-background-color: #407037; -fx-border-color: white;" text="          TOTAL PROFIT" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="ProfitLabel" layoutX="45.0" layoutY="278.0" prefHeight="13.0" prefWidth="334.0" textFill="#30512d">
+         <font>
+            <Font name="Arial Bold Italic" size="29.0" />
+         </font></Label>
+      <Button fx:id="BackButton" layoutX="374.0" layoutY="513.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-border-color: #30a5f2;" text="Back" />
+      <Label fx:id="CompanyNameLabel" layoutX="51.0" layoutY="206.0" prefHeight="46.0" prefWidth="405.0" textFill="#4e6b4d">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

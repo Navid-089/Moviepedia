@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.AddMoviePageController">
+   <children>
+      <Label layoutX="253.0" layoutY="25.0" prefHeight="40.0" prefWidth="262.0" style="-fx-border-color: green;" text="               Add Movie">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="150.0" prefHeight="26.0" prefWidth="110.0" text="Title            :" textFill="#847f7f">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TitleField" layoutX="140.0" layoutY="150.0" prefHeight="26.0" prefWidth="282.0" />
+      <Label layoutX="23.0" layoutY="195.0" prefHeight="26.0" prefWidth="110.0" text="Release Year :" textFill="#847f7f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ReleaseYearField" layoutX="139.0" layoutY="195.0" prefHeight="26.0" prefWidth="282.0" />
+      <Label layoutX="22.0" layoutY="240.0" prefHeight="26.0" prefWidth="110.0" text="Genres         :" textFill="#847f7f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="330.0" prefHeight="26.0" prefWidth="110.0" text="Budget        :" textFill="#847f7f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="372.0" prefHeight="26.0" prefWidth="110.0" text="Revenue      :" textFill="#847f7f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="GenresField" layoutX="139.0" layoutY="240.0" prefHeight="26.0" prefWidth="282.0" />
+      <TextField fx:id="BudgetField" layoutX="140.0" layoutY="330.0" prefHeight="26.0" prefWidth="282.0" />
+      <TextField fx:id="RevenueField" layoutX="139.0" layoutY="372.0" prefHeight="26.0" prefWidth="282.0" />
+      <Button fx:id="AddButton" layoutX="380.0" layoutY="447.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="26.0" prefWidth="40.0" style="-fx-background-color: #2b693c;" text="Add" textFill="WHITE" />
+      <Label fx:id="onSameTitleField" layoutX="139.0" layoutY="131.0" prefHeight="18.0" prefWidth="282.0" textFill="#ea0101" />
+      <ButtonBar layoutX="483.0" layoutY="330.0" prefHeight="40.0" prefWidth="200.0" />
+    <Button fx:id="BackButton" layoutX="554.0" layoutY="535.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: black;" text="Back" textFill="WHITE" />
+      <Button layoutX="444.0" layoutY="151.0" mnemonicParsing="false" onAction="#onCheckButtonClick" style="-fx-background-color: red;" text="Check" textFill="WHITE" />
+      <Label layoutX="140.0" layoutY="266.0" prefHeight="18.0" prefWidth="292.0" text="Write the genres by separating with &quot;,&quot; (max 3 allowed)" textFill="#561dff" />
+      <ImageView fitHeight="246.0" fitWidth="316.0" layoutX="486.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@anime-money-1149275.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="293.0" prefHeight="26.0" prefWidth="102.0" text="Duration     :" textFill="#847f7f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DurationField" layoutX="139.0" layoutY="293.0" prefHeight="26.0" prefWidth="282.0" />
+      <Label fx:id="SucessLabel" layoutX="222.0" layoutY="473.0" prefHeight="18.0" prefWidth="200.0" />
+      <Label layoutX="140.0" layoutY="177.0" prefHeight="15.0" prefWidth="234.0" text="Click twice to check if the movie already exists" textFill="#909c93">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
